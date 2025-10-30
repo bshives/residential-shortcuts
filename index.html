@@ -45,41 +45,65 @@
         margin-bottom:25px;
     }
     
+    .tabs {
+  		display: flex;
+  		justify-content: center;
+  		gap: 20px;
+  		margin-top: 45px;
+	}
+
+	.tab {
+  		cursor: pointer;
+  		padding: 10px 25px;
+  		border-radius: 8px;
+  		background: #e8edf1;
+  		color: #333e4e;
+  		font-weight: 500;
+  		transition: background 0.3s ease, color 0.3s ease;
+
+	}
+
+	.tab.active {
+  		background: #0070b9;
+  		color: white;
+  
+  	}
+    
     .communities {
-  max-width: 2000px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  padding: 40px 0;
-}
+  		max-width: 2000px;
+  		margin: auto;
+  		display: flex;
+  		flex-wrap: wrap;
+  		gap: 30px;
+  		justify-content: center;
+  		padding: 40px 0;
+	}
 
 	.community-card {
-  width: 210px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  		width: 210px;
+  		border-radius: 16px;
+  		overflow: hidden;
+  		background: #fff;
+  		box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
 
 	.community-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
+  		transform: translateY(-6px);
+  		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+	}
 
 	.community-image {
-  width: 100%;
-  height: 120px;
-  background-size: cover;
-  background-position: center;
-}
+  		width: 100%;
+  		height: 120px;
+  		background-size: cover;
+  		background-position: center;
+	}
 
 	.community-info {
-  padding: 20px;
-  position: relative;
-}
+  		padding: 20px;
+  		position: relative;
+	}
 
 	.community-header {
   display: flex;
@@ -146,6 +170,16 @@
         background: #7792a5;
         color: #ffffff !important;
     }
+    
+    /* Hide inactive tab content */
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 </style>
 <div class="custom-page">
@@ -168,8 +202,16 @@
 
 <h2>Garrett Residential Web Links & Onsite Folders</h2>
 
+<!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" data-target="platforms">Platforms</div>
+      <div class="tab" data-target="properties">Communities</div>
+    </div>
+
 </div>
-  <section class="communities">
+
+<!-- Platforms Section -->
+    <section id="platforms" class="tab-content active communities">  
     <div class="community-card">
       <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_ff9400462b14468d9fb0d54bb5194999~mv2.png');"></div>
       <div class="community-info">
@@ -336,7 +378,7 @@
         </div>
         <a class="explore-btn" href="https://www.netvendor.net/login" target="_blank">Get Started</a>
       </div>
-    </div>
+    </div> 
     
     <div class="community-card">
       <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_f6087366e61c4e67a55a337a10c22f53~mv2.png');"></div>
@@ -449,6 +491,291 @@
         <a class="explore-btn" href="https://www.valetliving.com/" target="_blank">Get Started</a>
       </div>
     </div>
+   </section>
+  
+    <!-- Communities Section (hidden by default) -->
+    <section id="properties" class="tab-content communities">
+
+<div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_1b4f727bd355424ab4d6a1f70b30e212~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Agave Ranch</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Luxury apartments in Glendale, AZ, near the Westgate Entertainment District</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Agave%20Ranch/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_f69279b04dbf407bb1184f7f58765128~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Ara THs & Flats</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>1-, 2-, and 3-bedroom townhomes & flats in Castle Rock's Meadows neighborhood</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Ara%20Townhomes%20%26%20Flats/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_cefcce61a127405b93806b485ac6e4a8~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Ebbtide Villas & Flats</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Resort-style 1-, 2-, and 3-bedroom apartments in Kissimmee’s Cypress Reserve</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Ebbtide/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_78371b168a4f4950846e9672c43219f7~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Garrett Forum</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Luxury 1-, 2-, and 3-bedroom apartments in Fort Myers, FL, with quick access to I-75</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/:f:/r/sites/Management/Management/Garrett%20Residential/Garrett%20Forum/Onsite%20Folder?csf=1&web=1&e=93N9uA" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_672065bff0874122abd57b1e3b277eea~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Garrett Mesa</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Contemporary 1-, 2-, and 3-bedroom apartments in Mesa, AZ, near US-60 and Loop 202</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Garrett%20Mesa/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_eb735a2ed8a548e8bf80c0e8b714512a~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Garrett Uptown</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Luxury 1-, 2-, and 3-bedroom apartments located near Downtown Chandler</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Garrett%20Uptown%20Luxury%20Flats/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_17b71629b3b941868325be88b06ad5a8~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Jasper at Vict. Ridge</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Luxury 1-, 2-, and 3-bedroom apartments in Briargate near InterQuest Marketplace</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/The%20Jasper%20Phase%20I/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_640cc60a1da14b85bfa6dfd95656355a~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Lennox at Copperleaf</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Spacious 1-, 2-, and 3-bedroom apartment homes located off Quincy near E-470</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/The%20Lennox%20at%20Copperleaf/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_e8b150ebe31b4d49b406922d657328e0~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Lift at Jordan Creek</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>1‑, 2‑, and 3‑bedroom apartments in West Des Moines near Jordan Creek Town Center</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Lift%20at%20Jordan%20Creek/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_e6e8402bc2da4f6aa783b2f3a034d976~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Livery</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>1- and 2-bedroom apartments in Lakeville, Minneosta, near Brandtjen Farms.</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Livery/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_73e51c6cb9b54d5eba6fa308716ebced~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Maeva</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Upscale 1-, 2-, and 3- bedroom apartments in Lutz, FL, close to Wiregrass Ranch Shopping Mall</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Maeva/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_d7e67097934f46e5bba8b238d86c8800~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Maverick</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Modern apartment homes in Greenwood, IN, located near downtown Indianapolis</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Maverick/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_bac43e6ddc7c4bc5bc86ae7cd8bb1ebb~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Rewind at Crest</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Stylish 1-, 2-, and 3-bedroom apartment homes in Central Colorado Springs near I-25</p>
+        </div>
+        <a class="explore-btn" href="" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_450274fa4b3344ca8949f739faef1c9e~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Stone Mesa</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Contemporary 1-, 2-, and 3-bedroom apartments in Northeast Colorado Springs</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Stone%20Mesa/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_87b7a8cf8f6a417aa586c7a68fa8ef72~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>The Artifact THs</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Contemporary 2- and 3-bedroom townhomes sitting off E-470 in Southeast Aurora</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/The%20Artifact%20Townhomes/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_84aec351ed6542549d7578d8a9f28580~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>The Baldwin</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Modern 1-, 2-, and 3-bedroom apartments in North Colorado Springs' Briargate area</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/The%20Baldwin/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_152d98bb993d41a69db7c49df87aee4a~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>The Citizen on Const.</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>1-, 2-, and 3-bedroom apartments in Colorado Springs’ Cimarron Hills neighborhood</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/Citizen%20on%20Constitution/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_8ca48a5cfbca477b92a8b18f6d446786~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>The Gallery</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>High-end 1-, 2-, and 3-bedroom apartments near Aurora's Eagle Bend neighborhood</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/The%20Gallery/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_8f118da3a26b470a91465c69fe4bc10f~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>The Nash Rosemount</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Modern 1-, 2-, and 3-bedroom apartments in Rosemount, MN, near Shannon Park</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/The%20Nash/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_40367878c8a54c2f84af6e0d6fb17468~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>The Pendant Southl.</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Luxury 1-, 2-, and 3-bedroom apartments nestled in the heart of Aurora Southlands</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/Management/Management/Forms/AllItems.aspx?id=/sites/Management/Management/Garrett%20Residential/The%20Pendant/Onsite%20Folder&viewid=f8510723-468b-49f9-be49-d03765556b14" target="_blank">View Folder</a>
+      </div>
+    </div>
+
   </section>
 
 <script>
@@ -458,4 +785,17 @@
       card.classList.toggle('active');
     });
   });
+  
+// Tab switching
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.target).classList.add('active');
+    });
+  });  
 </script>
