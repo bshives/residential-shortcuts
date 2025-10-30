@@ -1,0 +1,461 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&amp;family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet" />
+<style type="text/css">* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .custom-page {
+        font-family: &#039;Poppins&#039;, sans-serif;
+        background: url(&#039;your-background-image-url.jpg&#039;) repeat center center / cover;
+        background-blend-mode: overlay;
+        background-color:; /* Low-opacity effect */
+        color: #333e4e;
+        text-align: center; /* Only applied to this custom page */
+    }
+
+    .container {
+        padding: 0px 0px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 400px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    
+    .header h2 {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+
+    .header p {
+        font-size: 16px;
+        color: #000000;
+        margin-bottom:25px;
+    }
+    
+    .communities {
+  max-width: 2000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+	.community-card {
+  width: 210px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+	.community-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+	.community-image {
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+	.community-info {
+  padding: 20px;
+  position: relative;
+}
+
+	.community-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  gap: 6px;
+}
+
+	.community-header h3 {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+}
+
+	.arrow {
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #333e4e;
+  border-bottom: 2px solid #333e4e;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+  margin-top: 4px;
+}
+
+	.community-card.active .arrow {
+  transform: rotate(135deg);
+  margin-top: 10px;
+}
+
+	.community-description {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  margin-top: 12px;
+}
+
+	.community-card.active .community-description {
+  max-height: 200px;
+  opacity: 1;
+}
+
+	.community-description p {
+  font-size: 13px;
+  color: #333e4e;
+  margin-bottom: 12px;
+}
+
+	.explore-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 13px;
+  background: #0070b9;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+	.explore-btn:hover {
+        background: #7792a5;
+        color: #ffffff !important;
+    }
+
+</style>
+<div class="custom-page">
+<div class="container">
+<div class="header">
+
+<!-- Background Wrapper -->
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background: url('https://static.wixstatic.com/media/4f7dd4_815da2f808bb4b488385fffbf3e89d1e~mv2.png'); background-size: cover; background-repeat: no-repeat; background-position: center top; padding:5px 0;">
+    <tr>
+      <td align="center">
+        <!-- Email Container -->
+        <div style="max-width:600px;margin:0 auto;background:#;padding:30px;border-radius:0;text-align:center;box-shadow:0px 0px 0px rgba(0,0,0,0.12);">
+
+<!-- Logo -->
+    <div style="margin-bottom:30px;">
+      <img src="https://static.wixstatic.com/shapes/4f7dd4_abc74ce7325a48beabb47523030d9d26.svg" alt="Garrett Residential Icon" style="width:285px;height:auto;">
+    </div>
+
+<h1>Helpful Shortcuts & Resources</h1>
+
+<h2>Garrett Residential Web Links & Onsite Folders</h2>
+
+</div>
+  <section class="communities">
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_ff9400462b14468d9fb0d54bb5194999~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>ApartmentIQ Data</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Platform providing real-time data and analytics to track performance across our portfolio of multifamily assets</p>
+        </div>
+        <a class="explore-btn" href="https://app.apartmentiq.io/sign-in" target="_blank">Get Started</a>
+      </div>
+    </div>
+
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_a575362b35624f96b2bd1643973db60d~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Buildr Solutions</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Construction closeout software that streamlines punch lists, turnover documents, project handover, and much more</p>
+        </div>
+        <a class="explore-btn" href="https://buildr.com/" target="_blank">Get Started</a>
+      </div>
+    </div>
+
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_8dd7be506a644897af995d12f0c40067~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Docuverus Detection</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Identity verification tool used to securely review and validate government-issued identification documents</p>
+        </div>
+        <a class="explore-btn" href="https://support.dvapply.com/Ats/login" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_d5384dba866c45759172d2ddbca01cd6~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Entrata Portal</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Property management software for leasing, payments, maintenance, resident communication, and more</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettcompanies.entrata.com/" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_bc4fb425220c40468b2c64b54febc607~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Flex Rent Pay</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Resident payment platform allowing flexible rent payments split into smaller, more manageable installments</p>
+        </div>
+        <a class="explore-btn" href="https://partner.getflex.com/auth/request" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_49b0472823bf4886b5ea015dea4156a1~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>TheGuarantors</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Rent guarantee and security deposit alternative helping residents qualify and protect property owners</p>
+        </div>
+        <a class="explore-btn" href="https://auth.theguarantors.com/u/login?state=hKFo2SBucmNOUWFWVDV3NHNCV2tFbEZTMi1QZ3E1VXZFZUpXNKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFJ5aExIYk5DWGRYbmVORHRXS1B0cmNtYlZ5dnBvQndRo2NpZNkgS1ptYmptSTVtMXU2clVYVnF3MVhIelczcDAxUkFWa1U" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_4d5041167dad46b593accea6ca89ef73~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>HelloData Reporting</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Business intelligence tool offering insights into traffic, leasing, operations, and financial performance</p>
+        </div>
+        <a class="explore-btn" href="https://auth.hellodata.ai/u/login/identifier?state=hKFo2SBkSGw2X1FHQ1RCbjgtTVNoalpLT0lVc3hTa2FoSlZ5MaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGYtdWRsR0lVMTNNbnFpQ1k0S2MzT3hwcEFFQWdPNWFFo2NpZNkgUWp1QjNxMXBvZnExZmZzZjJsaXlMUEZlUXhQOHhjMkk" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_8164d25e75084c4ba07d7988828ac92a~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>HelloSpoke Notify</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Cloud-based phone system enabling efficient communication for leads, residents, and on-site staff</p>
+        </div>
+        <a class="explore-btn" href="https://hsnotify.us.auth0.com/u/login?state=hKFo2SBsQzd0TVdTNS1yRVNBaGJuTVZaX1JPWTlCU1BrMGZqeaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIE5UUHNkbjRlb25OaTVXc1hRQjR4VndMTjNRSkYyM2hOo2NpZNkgSVdNSU5jUEI3WFh1cmVQQWxXVWRadzF3NFhMNG5tc1o" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_4e0917e8888b4f7eb97511c4ce13d2a1~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Level365 Phones</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Unified communications platform providing voice, chat, and video for seamless day-to-day connectivity</p>
+        </div>
+        <a class="explore-btn" href="https://app.level365.com/portal/" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+     <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_07c5755f30c24f1d84d0539b4567bd83~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Monday.com Portal</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Workflow management tool used to track projects, automate tasks, and improve collaboration across all departments</p>
+        </div>
+        <a class="explore-btn" href="https://tgc572682.monday.com/auth/login_monday/email_password" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_e1822016f9a14df7a0fc9773bcb0b6a2~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Natl. Credit Systems</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Collection agency specializing in recovering delinquent multifamily rent and misc. apartment-related debt</p>
+        </div>
+        <a class="explore-btn" href="https://www.netvendor.net/login" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_f366a6af49fc423eba47fcdb1ca2b264~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>NetVendor Platform</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Vendor management and compliance platform for verifying insurance, credentials, and onboarding</p>
+        </div>
+        <a class="explore-btn" href="https://www.netvendor.net/login" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_f6087366e61c4e67a55a337a10c22f53~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Opiniion Reviews</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Resident feedback and reputation management tool that automates review collection and survey responses</p>
+        </div>
+        <a class="explore-btn" href="https://app.opiniion.com/en/login" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_7da163a0c7994dc79f978bc1f8cbc80c~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Paycor HR & Payroll</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Human Resources and payroll software for managing employee data, benefits, time tracking, and compensation</p>
+        </div>
+        <a class="explore-btn" href="https://hcm.paycor.com/authentication/signin" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_e03426504af04257a2b50bb3bd398aa4~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Policies & Procedures</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Central resource outlining Garrett Residential standards, operations, employee guidelines, and more</p>
+        </div>
+        <a class="explore-btn" href="https://thegarrettco2.sharepoint.com/sites/SharepointResources/Onboarding%20%20Training/Forms/AllItems.aspx?id=/sites/SharepointResources/Onboarding%20%20Training/Policies%20%26%20Procedures/09%20Garrett%20Residential&p=true&ga=1" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_5abe0d9e85ee44768e50dc2d17dd4d6a~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Service Request Form</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Internal TGC marketing request form, utilized for material requests, entrata concerns, website edits, and more</p>
+        </div>
+        <a class="explore-btn" href="https://forms.monday.com/forms/3b9d8db68864ebcbccdcbaedb067cd7c?r=use1" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_72aa57c9dfaf4528b38007b4ce5f9de3~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>SmartRent Solutions</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Smart home automation platform controlling locks, thermostats, and devices across apartment communities</p>
+        </div>
+        <a class="explore-btn" href="https://control.smartrent.com/login" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_932a6143f3db45279c08bcaebe76d4ca~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Staples Advantage</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Online business supply platform for ordering office, maintenace, and facility/community management products</p>
+        </div>
+        <a class="explore-btn" href="https://www.staplesadvantage.com/idm" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_6aa995f4761c4cd5a68c242092d08b51~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Triple RRR Store</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Internal online shop for ordering branded apparel, signage, and other branded, promotional Garrett Residential items</p>
+        </div>
+        <a class="explore-btn" href="https://garrettcomarketplace.com/my-account/" target="_blank">Get Started</a>
+      </div>
+    </div>
+    
+    <div class="community-card">
+      <div class="community-image" style="background-image: url('https://static.wixstatic.com/media/4f7dd4_289256cc96c24e379a1259aeb3ee9b6a~mv2.png');"></div>
+      <div class="community-info">
+        <div class="community-header">
+          <h3>Valet Living</h3>
+          <div class="arrow"></div>
+        </div>
+        <div class="community-description">
+          <p>Amenity service providing doorstep trash and recycling collection for residents in multifamily communities</p>
+        </div>
+        <a class="explore-btn" href="https://www.valetliving.com/" target="_blank">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+<script>
+  document.querySelectorAll('.community-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const card = header.closest('.community-card');
+      card.classList.toggle('active');
+    });
+  });
+</script>
